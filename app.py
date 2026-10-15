@@ -76,7 +76,7 @@ if st.button("Audit Repository", type="primary"):
                 with st.spinner(f"Analyzing {relative_path} with Gemini..."):
                   # Send code to Gemini for review and refactoring suggestions
                   response = client.models.generate_content(
-                      model="gemini-3.8-flash",
+                      model="gemini-3.6-flash",
                       contents=(
                           "Review this code file, find any bugs, security"
                           " issues, or code smells, and provide a clean"
